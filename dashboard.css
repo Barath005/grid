@@ -1,0 +1,218 @@
+/* Style for whole page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+/* Style for body */
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;/* Applying grid */
+    grid-template-columns: 250px 1fr;/* one column size */
+    grid-template-rows: 120px 1fr;/* one row size */
+}
+/* Style for sidebar */
+.sidebar{
+    background-color: hsla(193, 79%, 51%, 0.911);
+    grid-column: 1 / 2;/* Column size */
+    grid-row: 1 / 3;/* Row size */
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar-link{
+    display: flex;
+    align-items: center;
+    padding:13px 40px;
+    color: whitesmoke;
+}
+/* Style for icons */
+.sidebar .material-symbols-outlined{
+    padding: 0 15px 0 0;
+    font-size: 1.8rem;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#dashboard{
+    font-size: 2rem;
+}
+.sidebar-link p{
+    font-size: 1.2rem;
+}
+/* Style for header section */
+.header {
+    margin-top: 2%;
+    background-color: #fff;
+    grid-column: 2 / 3;/* Column starts from to 2 and end at 3 */
+    grid-row: 1 / 2; /* Row starts from 1 and end at 2 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* style for searchbar and profile */
+.position{
+    display: grid;/* Applying grid */
+    grid-template-columns: 1fr 1fr;/* Size of column */
+    grid-template-rows: 1fr;/* Size of row */
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Specific style for searchbar */
+.search input {
+    background: whitesmoke;
+    border: 1px solid black;
+    height: 22px;
+    width: 500px;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+/* Style for profile picture */
+.profile{
+    display: flex;
+    flex-direction: row;
+    padding-left: 80%;
+    padding-top: 1%;
+}
+
+
+.profile p{
+    font-size: medium;
+    
+}
+.profile #name{
+    margin-top: 10px;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+
+} 
+.intro p{
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+/* Style for buttons */
+.buttons{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;/* column size */
+    grid-template-rows: 30px 30px 30px;/* Row size */
+    margin-left: 60%;
+    gap: 0.5rem;   
+}
+button{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:  hsla(193, 79%, 51%, 0.911);
+    color: whitesmoke;
+    
+}
+/* Style for main section */
+main {
+    background-color: rgb(217, 202, 202);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Style for project container */
+.projects-container{
+    display: grid;
+    grid-template-rows: 30px 1fr;
+  
+}
+.content-container-1{
+    display: grid;/* Applying grid */
+    grid-template-columns: 1fr 1fr;/* Column size */
+    grid-template-rows: 1fr 1fr 1fr;/* Row size */
+    gap: 0.5rem;/* gap between */
+    margin: 7px;
+    
+}
+/* Style for card */
+.card{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    border-left: 10px solid orange;
+}
+
+.projects-container h3{
+    margin: 15px;
+    font-size: large;
+    font-weight: bold;
+  
+}
+.card h5{
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+.card p{
+    margin: 5px;
+    font-weight: lighter;
+    font-size: medium;
+}
+/* Style for icons */
+.icons{
+    display: flex;
+    justify-content: end;
+    margin-top: 11%;
+    text-indent: 7px;
+}
+
+/* Style for side container */
+.aside-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.Announcement .box{
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.trending h2{
+    margin-left: 8px;
+    margin-top: 3px;
+}
+
+/* style for box2 */
+.box2{
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 4px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;  
+
+}
+.user p{
+    font-weight: bold;
+    font-size: larger;
+}
+
